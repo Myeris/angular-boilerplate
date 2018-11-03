@@ -51,7 +51,6 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "6.1.0",
-    "@types/vexflow": "1.2.31",
     "core-js": "^2.5.4",
     "raven-js": "^3.26.1",
     "reflect-metadata": "^0.1.12",
