@@ -23,7 +23,7 @@
     "@types/node": "^9.6.21",
     "angular-router-loader": "0.8.5",
     "angular2-template-loader": "^0.6.2",
-    "awesome-typescript-loader": "^3.5.0",
+    "awesome-typescript-loader": "^5.2.1",
     "cross-env": "^5.1.4",
     "file-loader": "^1.1.9",
     "html-loader": "0.5.5",
@@ -39,8 +39,9 @@
     "rimraf": "~2.6.2",
     "sass-loader": "^6.0.6",
     "typescript": "~2.7.2",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "~2.11.1"
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-dev-server": ">=3.1.11"
   },
   "dependencies": {
     "@angular/animations": "^6.1.0",
