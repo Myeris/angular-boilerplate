@@ -7,7 +7,7 @@ This project is a boilerplate for Angular.
 - [SASS](https://sass-lang.com/)
 - [Karma](https://github.com/karma-runner/karma)
 - [Jasmine](https://github.com/jasmine/jasmine)
-- [Webpack3](https://github.com/webpack/webpack/tree/webpack-3)
+- [Webpack](https://github.com/webpack/webpack)
 - Animations on router
 - A simple custom store
 - [Compodoc](https://github.com/compodoc/compodoc)
