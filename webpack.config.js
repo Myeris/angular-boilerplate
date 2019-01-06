@@ -15,10 +15,10 @@ const plugins = [
 			'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
 		}
 	}),
-	new webpack.optimize.CommonsChunkPlugin({
-		name: 'vendor',
-		minChunks: (module) => module.context && /node_modules/.test(module.context)
-	})
+	// new webpack.optimize.CommonsChunkPlugin({
+	// 	name: 'vendor',
+	// 	minChunks: (module) => module.context && /node_modules/.test(module.context)
+	// })
 ];
 
 if (process.env.NODE_ENV === 'production') {
@@ -129,6 +129,17 @@ module.exports = {
 			'src',
 			'node_modules'
 		]
+	},
+	optimization: {
+		splitChunks: {
+			cacheGroups: {
+				vendor: {
+					test: (module) => module.context && /node_modules/.test(module.context),
+					name: "vendor",
+					chunks: "all"
+				}
+			}
+		}
 	},
 	plugins
 };

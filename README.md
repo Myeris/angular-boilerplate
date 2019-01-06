@@ -16,19 +16,19 @@ This project is a boilerplate for Angular.
 
 **Run for dev**
 
-`yarn start`
+`npm start`
 
 
 **Build**
 
-`yarn build`
+`npm build`
 
 
 **Test**
 
-`yarn test`
+`npm run test`
 
 
 **Build your doc**
 
-`yarn compodoc`
+`npm run compodoc`
