@@ -14,11 +14,7 @@ const plugins = [
 		'process.env': {
 			'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
 		}
-	}),
-	// new webpack.optimize.CommonsChunkPlugin({
-	// 	name: 'vendor',
-	// 	minChunks: (module) => module.context && /node_modules/.test(module.context)
-	// })
+	})
 ];
 
 if (process.env.NODE_ENV === 'production') {
@@ -84,6 +80,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 module.exports = {
+	mode: process.env.NODE_ENV,
 	cache: true,
 	context: __dirname,
 	devServer: {
