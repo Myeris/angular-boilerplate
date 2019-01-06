@@ -3,7 +3,7 @@
 This project is a boilerplate for Angular.
 
 ## Featuring
-- [Angular6](https://github.com/angular/angular/tree/6.1.x)
+- [Angular 7](https://github.com/angular/angular)
 - [SASS](https://sass-lang.com/)
 - [Karma](https://github.com/karma-runner/karma)
 - [Jasmine](https://github.com/jasmine/jasmine)
