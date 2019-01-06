@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const typescript = require('typescript');
 const {AngularCompilerPlugin} = require('@ngtools/webpack');
+const FilterWarningsPlugin = require('webpack-filter-warnings-plugin');
 
 const rules = [
 	{test: /\.html$/, loader: 'html-loader'},
@@ -14,6 +15,9 @@ const plugins = [
 		'process.env': {
 			'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
 		}
+	}),
+	new FilterWarningsPlugin({
+		exclude: /System.import/
 	})
 ];
 
